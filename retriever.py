@@ -1,7 +1,7 @@
 from langchain_community.vectorstores import FAISS
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
-from rag.embeddings import get_embedding_model
+from embeddings import get_embedding_model
 
 def process_documents(pdf_data_list, image_data_list):
     """
@@ -34,4 +34,5 @@ def search_context(query, vector_db):
         source = doc.metadata.get("source", "Unknown Source")
         context_with_labels += f"\n---\nFROM FILE: {source}\nCONTENT: {doc.page_content}\n"
     
+
     return context_with_labels
