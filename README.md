@@ -32,4 +32,17 @@ Modern Interface: Built with a custom Streamlit UI featuring glassmorphism and h
 High-Speed Inference: Optimized for the Groq LPU Inference Engine, ensuring near-instant response times for complex multimodal queries.
 
 
+FOLDER STRUCTURE 
+
+vision-rag-pro/
+├── app.py              # Main UI and Streamlit configuration
+├── retriever.py        # Logic for PDF processing and FAISS search
+├── llm.py              # Connections to Groq (Llama 3.3)
+├── vision.py           # Image analysis logic
+├── embeddings.py       # Embedding model (all-MiniLM-L6-v2) configuration
+├── requirements.txt    # List of libraries (PyPDF2, langchain, etc.)
+├── README.md           # Project documentation and setup guide
+└── .gitignore          # Tells GitHub to ignore venv and .env files
+
+
 
