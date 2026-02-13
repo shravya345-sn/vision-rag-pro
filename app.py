@@ -93,3 +93,4 @@ if prompt := st.chat_input("Ask about your files..."):
                 st.session_state.messages.append({"role": "assistant", "content": response})
     else:
         st.info("Upload and 'Sync' files in the sidebar to begin.")
+
